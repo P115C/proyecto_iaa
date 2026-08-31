@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-from iaa_memoria_1 import KVExtractor, KVStore, VectorStoreIndex
+from agente_mem_propio import KVExtractor, KVStore, VectorStoreIndex
 
 """
 KVStore con deduplicación de claves mediante índice vectorial.
@@ -72,4 +72,4 @@ if __name__ == "__main__":
     print(f"  Ubicación: {location}")
 
     # 7. Limpieza (opcional)
-    # key_index.reset()  # Descomentar para borrar el índice
+    key_index.reset()  # Descomentar para borrar el índice
