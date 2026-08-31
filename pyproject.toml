@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agente_mem_propio"
+version = "0.1.0"
+description = "Agente básico con implementación de memoria propia"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "chromadb",
+    "sentence-transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+eval = [
+    "memgpt>=0.3",        # Optional: only if you decide to evaluate it
+    "zep-python>=2.0",    # Optional
+]
