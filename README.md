@@ -2,11 +2,22 @@
 
 Repositorio para el proyecto de la materia IAA (2026).
 
+## Estructura
+
+- `/eval/`: Evaluación de sistemas de memoria existentes.
+- `/src/agente_mem_propio/`: Sistema de memoria propio.
+- `/demo/`: Scripts de demostración.
+- `/docs/`: Documentación/fuentes utilizadas.
+
+## Evaluación de sistemas de memoria existentes
+
+TODO.
+
 ## agente_mem_propio
 
 Sistema de memoria que guarda los datos que un usuario menciona en una conversación (correo, ciudad, empleo, preferencias, etc.) y evita duplicados cuando la misma información se repite con otras palabras.
 
-### Requerimientos
+### Instalación
 
 Para instalar el paquete, en la terminal, estando en el directorio base de este repositorio, correr:
 
@@ -37,11 +48,7 @@ flowchart LR
     F --> G
 ```
 
-### La idea clave: deduplicación semántica
-
-La novedad está en el tercer paso. En vez de comparar claves letra a letra, el sistema las convierte en **vectores numéricos (embeddings)** que capturan su significado y mide la **similitud por coseno** entre ellos.
-
-Si dos claves son lo bastante parecidas en significado, se consideran la misma y se funden en una sola. Así, "vivo en Madrid" y "mi ciudad es Madrid" acaban en una única entrada, sin importar cómo se formule la frase.
+En vez de comparar claves letra a letra, el sistema las convierte en **vectores numéricos (embeddings)** que capturan su significado y mide la **similitud por coseno** entre ellos. Si dos claves son lo bastante parecidas en significado, se consideran la misma y se funden en una sola. Así, "vivo en Madrid" y "mi ciudad es Madrid" acaban en una única entrada, sin importar cómo se formule la frase.
 
 ### Persistencia
 
