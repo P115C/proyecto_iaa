@@ -9,6 +9,30 @@ Repositorio para el proyecto de la materia IAA (2026).
 - `/demo/`: Scripts de demostración.
 - `/docs/`: Documentación/fuentes utilizadas.
 
+## Modo de trabajo
+
+Para hacer cambios, crear una rama:
+
+```bash
+git checkout -b nombre-de-tu-rama
+```
+
+Luego de hacer los cambios, hacer push:
+
+```bash
+git push origin nombre-de-tu-rama
+```
+
+Una vez que se quiera pasar cambios a `main` se hará un Pull Request.
+
+Recordar frecuentemente mantener la rama `main` actualizada:
+
+```bash
+git checkout main
+git pull
+git checkout nombre-de-tu-rama
+```
+
 ## Evaluación de sistemas de memoria existentes
 
 TODO.
