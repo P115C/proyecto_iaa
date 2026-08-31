@@ -20,6 +20,7 @@ git checkout -b nombre-de-tu-rama
 Luego de hacer los cambios, hacer push:
 
 ```bash
+git push --set-upstream origin nombre-de-tu-rama
 git push origin nombre-de-tu-rama
 ```
 
